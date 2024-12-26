@@ -1,3 +1,4 @@
-import { Home, ReadonlyHome } from './home';
+import { Home } from './home';
+import { Service } from './service';
 
-export type { Home, ReadonlyHome }; 
+export type { Home, Service };

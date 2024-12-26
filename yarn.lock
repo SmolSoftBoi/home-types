@@ -349,6 +349,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@smolpack/home-types@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@smolpack/home-types@workspace:."
+  dependencies:
+    "@eslint/js": "npm:^9.12.0"
+    "@rslib/core": "npm:^0.2.2"
+    "@types/node": "npm:^22.8.1"
+    eslint: "npm:^9.12.0"
+    globals: "npm:^15.11.0"
+    prettier: "npm:^3.3.3"
+    typescript: "npm:^5.7.2"
+    typescript-eslint: "npm:^8.8.1"
+  languageName: unknown
+  linkType: soft
+
 "@swc/helpers@npm:^0.5.15":
   version: 0.5.15
   resolution: "@swc/helpers@npm:0.5.15"
@@ -926,21 +941,6 @@ __metadata:
   checksum: 10c0/2e789c61b7888d66993e14e8331449e525ef42aac53c627cc53d1c3334e768bcb6abdc4f5f0de1478a25beec6f0bd62c7549058b7ac53e924040d4f301f02fd1
   languageName: node
   linkType: hard
-
-"home-types@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "home-types@workspace:."
-  dependencies:
-    "@eslint/js": "npm:^9.12.0"
-    "@rslib/core": "npm:^0.2.2"
-    "@types/node": "npm:^22.8.1"
-    eslint: "npm:^9.12.0"
-    globals: "npm:^15.11.0"
-    prettier: "npm:^3.3.3"
-    typescript: "npm:^5.7.2"
-    typescript-eslint: "npm:^8.8.1"
-  languageName: unknown
-  linkType: soft
 
 "ignore@npm:^5.2.0, ignore@npm:^5.3.1":
   version: 5.3.2
