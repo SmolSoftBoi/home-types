@@ -11,6 +11,13 @@ export interface Service {
    */
   characteristics: Characteristic[];
 
+  // Identifying the service
+
+  /**
+   * The user specified name of the service.
+   */
+  name: string;
+
   // Getting the service type
 
   /**

@@ -1,10 +1,18 @@
 import { Accessory } from './accessory';
 import { Service } from './service';
+import { Zone } from './zone';
 
 /**
  * The primary unit of living space, typically composed of rooms organised into zones.
  */
 export interface Home {
+  // Grouping rooms into zones
+
+  /**
+   * An array of all the zones in the home.
+   */
+  zones: Zone[];
+
   // Managing accessories
 
   /**
