@@ -7,6 +7,11 @@ export interface Zone {
   // Identifying a zone
 
   /**
+   * The name of the zone.
+   */
+  name: string;
+
+  /**
    * The unique identifier for a zone.
    */
   uniqueIdentifier: string;

@@ -1,11 +1,27 @@
 import { Accessory } from './accessory';
+import { Room } from './room';
 import { Service } from './service';
+import { User } from './user';
 import { Zone } from './zone';
 
 /**
  * The primary unit of living space, typically composed of rooms organised into zones.
  */
 export interface Home {
+  // Identifying a home
+
+  /**
+   * The name the user gives to the home.
+   */
+  name: string;
+
+  // Dividing a house into rooms
+
+  /**
+   * An array of the rooms created and managed by the user.
+   */
+  rooms: Room[];
+
   // Grouping rooms into zones
 
   /**
@@ -29,4 +45,18 @@ export interface Home {
    * @returns An array of found services.
    */
   servicesWithTypes(serviceTypes: string[]): Service[];
+
+  // Querying the state of a home
+
+  /**
+   * The state of the home.
+   */
+  state: string;
+
+  // Managing users
+
+  /**
+   * The current user.
+   */
+  currentUser: User;
 }
