@@ -4,6 +4,11 @@ export interface Accessory {
   // Identifying accessories
 
   /**
+   * The name of the accessory.
+   */
+  name: string;
+
+  /**
    * A unique identifier for the accessory.
    */
   uniqueIdentifier: string;

@@ -7,6 +7,11 @@ export interface Room {
   // Identifying a room
 
   /**
+   * The name of the room.
+   */
+  name: string;
+
+  /**
    * The unique identifier for a room.
    */
   uniqueIdentifier: string;
