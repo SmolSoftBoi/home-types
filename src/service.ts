@@ -31,5 +31,5 @@ export interface Service {
   /**
    * The accessory that provides this service.
    */
-  accessory: Accessory | undefined;
+  accessory: Accessory | void;
 }

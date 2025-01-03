@@ -19,7 +19,7 @@ export interface Accessory {
   /**
    * The room containing the accessory.
    */
-  room: Room | undefined;
+  room: Room | void;
 
   // Getting accessory state
 
@@ -40,10 +40,10 @@ export interface Accessory {
   /**
    * The manufacturer of the accessory.
    */
-  manufacturer: string | undefined;
+  manufacturer: string | void;
 
   /**
    * The model name of the accessory.
    */
-  model: string | undefined;
+  model: string | void;
 }
