@@ -1,3 +1,4 @@
+import { Room } from './room';
 import { Service } from './service';
 
 export interface Accessory {
@@ -13,10 +14,36 @@ export interface Accessory {
    */
   uniqueIdentifier: string;
 
+  // Locating an accessory
+
+  /**
+   * The room containing the accessory.
+   */
+  room: Room | undefined;
+
+  // Getting accessory state
+
+  /**
+   * A Boolean value indicating whether the accessory is blocked.
+   */
+  isBlocked: boolean;
+
   // Controlling accessory features
 
   /**
    * An array of services provided by the accessory.
    */
   services: Service[];
+
+  // Getting manufacturer information
+
+  /**
+   * The manufacturer of the accessory.
+   */
+  manufacturer: string | undefined;
+
+  /**
+   * The model name of the accessory.
+   */
+  model: string | undefined;
 }

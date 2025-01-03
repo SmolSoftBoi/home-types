@@ -1,3 +1,4 @@
+import { Accessory } from './accessory';
 import { Characteristic } from './characteristic';
 
 /**
@@ -24,4 +25,11 @@ export interface Service {
    * The type of the service.
    */
   serviceType: string;
+
+  // Getting the service's provider
+
+  /**
+   * The accessory that provides this service.
+   */
+  accessory: Accessory | undefined;
 }
