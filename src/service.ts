@@ -19,6 +19,11 @@ export interface Service {
    */
   name: string;
 
+  /**
+   * A unique identifier for the service.
+   */
+  uniqueIdentifier: string;
+
   // Getting the service type
 
   /**
